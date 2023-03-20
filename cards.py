@@ -1,3 +1,9 @@
+# just for testing
+from faker import Faker
+fake = Faker()
+print(fake.name())
+
+
 # first class
 class BaseContact:
     def __init__(self, name, surname, pers_phone, email):
@@ -42,13 +48,13 @@ b_contact4 = BusinessContact(name="Sasha", surname="Landau", pers_phone="+481391
 b_contact5 = BusinessContact(name="Andrew", surname="Joly", pers_phone="+4814920492", email="andrewfpf@gmail.com", company="Galaxy", position="manager", work_phone="+9970768688")
 
 
+# didn't get how to make random values
+def create_contacts():
+    print()
+
+
+# just for testing
 BaseContact.contact(person2)
 BusinessContact.contact(b_contact2)
 BaseContact.label_length(person2)
 BusinessContact.label_length(b_contact3)
-
-from faker import Faker
-
-fake = Faker()
-
-print(fake.name())
